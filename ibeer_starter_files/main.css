@@ -114,6 +114,8 @@ img{
         TODO:
         - Flexbox - The logo needs to take up more space
         that the other links
+
+        **I dont' see what this is referring to in the mockup; the logo seems to appear correct without additional styling**
     */
 }
 main{
@@ -121,17 +123,19 @@ main{
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
     width: 60%;
+
+    /*
+        TODO:
+        - Flexbox: Set the starting width of this element
+        - Use relative positioning to bump this upward
+    */
+
     display: flex;
     flex-direction: column;
     position: relative;
     top: -50px;
     left: 50px;
     float: left;
-    /*
-        TODO:
-        - Flexbox: Set the starting width of this element
-        - Use relative positioning to bump this upward
-    */
 }
 
 div.aside {
@@ -194,13 +198,23 @@ article img{
         - Float article images to the right
         and match sizes and spacing to the mockup
     */
+    float: right;
+    max-width: 50%;
+    margin-left: 10px;
 }
 article footer p{
+
     /*
         TODO:
         - Style the article footer
         HINT: Look to the article header;
     */
+    clear: both;
+    border-top: 1px solid #666;
+    padding-top: 10px;
+    margin-top: 20px;
+    text-align: center;
+    color: #666;
 }
 #site-footer{
     clear: both;
@@ -209,4 +223,7 @@ article footer p{
         TODO:
         - Style the site footer
     */
+    text-align: center;
+    padding: 20px;
+    color: white;
 }
