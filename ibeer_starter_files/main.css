@@ -13,6 +13,12 @@ COLORS:
 light tan: #eeebda
 
 */
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
 body{
     font-family: 'Noto Serif', serif;
     line-height: 1.8;
@@ -118,11 +124,16 @@ img{
         **I dont' see what this is referring to in the mockup; the logo seems to appear correct without additional styling**
     */
 }
+
+.both-flex{
+  display: flex;
+  margin: -50px 50px 50px 50px;
+}
 main{
     padding: 20px;
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
-    width: 60%;
+    width: 75%;
 
     /*
         TODO:
@@ -130,18 +141,20 @@ main{
         - Use relative positioning to bump this upward
     */
 
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: -50px;
-    left: 50px;
-    float: left;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*position: relative;*/
+    /*top: -50px;*/
+    /*left: 50px;*/
+    /*float: left;*/
 }
 
-div.aside {
-  display: flex;
-  align-items: stretch;
-}
+/*div.aside {*/
+  /*display: flex;*/
+  /*align-items: stretch;*/
+  /*flex-direction: row-reverse;*/
+/*}*/
+
 aside{
     padding: 20px;
     background-color: #eee;
@@ -153,10 +166,10 @@ aside{
         - Use relative positioning to bump this upward
     */
 
-    flex-basis: 60%;
+    flex-basis: 25%;
     position: relative;
-    top: -50px;
-    right: -50px;
+    /*top: -2000px;*/
+    /*right: -50px;*/
 }
 aside h3{
     text-align: center;
@@ -209,15 +222,16 @@ article footer p{
         - Style the article footer
         HINT: Look to the article header;
     */
-    clear: both;
-    border-top: 1px solid #666;
+    /*clear: both;*/
+    border-top: 1px solid #ccc;
     padding-top: 10px;
     margin-top: 20px;
     text-align: center;
     color: #666;
+    text-transform: uppercase;
 }
 #site-footer{
-    clear: both;
+    /*clear: both;*/
     background: #333;
     /*
         TODO:
