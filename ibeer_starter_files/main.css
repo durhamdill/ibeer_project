@@ -167,7 +167,7 @@ aside{
     */
 
     flex-basis: 25%;
-    position: relative;
+    /*position: relative;*/
     /*top: -2000px;*/
     /*right: -50px;*/
 }
